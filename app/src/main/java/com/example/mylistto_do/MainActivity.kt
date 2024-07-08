@@ -9,11 +9,12 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
 
             private lateinit var editTextTask: EditText
-            private lateinit var buttonAdd: Button
+            private lateinit var buttonAdd: FloatingActionButton
             private lateinit var listViewTasks: ListView
 
             private lateinit var tasksList: MutableList<String>
