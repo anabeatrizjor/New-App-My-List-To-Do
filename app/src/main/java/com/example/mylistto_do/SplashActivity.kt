@@ -12,14 +12,14 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class SplashActivity : AppCompatActivity() {
-     private var splashScreenMotion = 2000
+     private var splashScreenMotion = 3000
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_splash)
 
         val logo = findViewById<ImageView>(R.id.logo)
-        val animation = AnimationUtils.loadAnimation(R.anim.animation_fade)
+        val animation = AnimationUtils.loadAnimation(this, R.anim.animation_fade)
 
         Handler().postDelayed({
             val intent = Intent(this@SplashActivity, MainActivity::class.java)
